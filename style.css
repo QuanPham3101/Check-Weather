@@ -93,3 +93,46 @@ button:hover{
     color: #fff;
     margin-top: 10px;
 }
+
+/* CSS cho kích thước màn hình điện thoại */
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start; /* Thay đổi cách căn chỉnh */
+        padding: 20px; /* Thêm lề để tránh việc chồng chéo nội dung */
+    }
+
+    #weather-container {
+        max-width: none; /* Hủy bỏ giới hạn chiều rộng */
+        width: 100%; /* Đảm bảo nội dung căn giữa trên màn hình điện thoại */
+        border-radius: 0; /* Hủy bỏ bo tròn viền */
+    }
+
+    input {
+        width: 100%; /* Đảm bảo ô nhập căn giữa và lấp đầy chiều rộng */
+        margin-top: 10px; /* Giảm khoảng cách giữa các ô nhập */
+    }
+
+    button {
+        width: 100%; /* Lấp đầy chiều rộng */
+        margin-top: 10px; /* Giảm khoảng cách giữa các nút */
+    }
+
+    #weather-icon {
+        width: 150px; /* Giảm kích thước biểu tượng thời tiết */
+        height: 150px;
+    }
+
+    #hourly-forecast {
+        margin-top: 30px; /* Giảm khoảng cách giữa dự đoán hàng giờ */
+    }
+
+    .hourly-item {
+        width: 60px; /* Giảm kích thước mỗi mục hàng giờ */
+        margin-right: 5px; /* Giảm khoảng cách giữa các mục hàng giờ */
+    }
+
+    .hourly-item img {
+        width: 20px; /* Giảm kích thước biểu tượng thời tiết */
+        height: 20px;
+    }
+}
